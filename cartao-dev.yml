@@ -21,5 +21,4 @@ spring:
     show-sql: true
 feign:
   hystrix:
-    enable: true
-
+    enabled: true

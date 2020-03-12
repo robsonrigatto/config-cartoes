@@ -22,4 +22,4 @@ spring:
 
 feign:
   hystrix:
-    enable: true
+    enabled: true
