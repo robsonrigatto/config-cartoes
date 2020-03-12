@@ -1,21 +1,21 @@
 eureka:
-	client:
-		serviceUrl:
-			defaultZone: http://localhost:8761/eureka/
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
 
 spring:
-	datasource:
-		username: cartoes
-		password: cartoes
-		url: jdbc:mysql://localhost/cliente?serverTimezone=UTC
-		hikari:
-			connectionTimeout: 20000
-			maximumPoolSize: 5
-	jpa:
-		properties:
-			hibernate:
-				dialect: org.hibernate.dialect.MySQL5InnoDBDialect
-				format_sql: true
-		hibernate:
-			ddl-auto: update
-		show-sql: true
+  datasource:
+    url: jdbc:mysql://localhost/cliente?serverTimezone=UTC
+    username: cartoes
+    password: cartoes
+    hikari:
+      connectionTimeout: 20000
+      maximumPoolSize: 5
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+        format_sql: true
+    hibernate:
+      ddl-auto: update
+    show-sql: true
