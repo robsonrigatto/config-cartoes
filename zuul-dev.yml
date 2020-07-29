@@ -1,0 +1,27 @@
+eureka:
+	client:
+		serviceUrl:
+			defaultZone: http://localhost:8761/eureka/
+
+zuul:
+	prefix: /api
+	routes:
+    		cep:
+      			path: /cep/**
+			url: https://viacep.com.br/ws/
+    		acesso:
+      			path: /acesso/**
+			serviceId: acesso
+      			stripPrefix: false
+    		cliente:
+      			path: /cliente/**
+			serviceId: cliente
+      			stripPrefix: false
+    		porta:
+      			path: /porta/**
+			serviceId: porta
+      			stripPrefix: false
+
+	
+
+
