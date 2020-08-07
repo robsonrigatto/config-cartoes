@@ -13,11 +13,14 @@ zuul:
       path: /acesso/**
       serviceId: acesso
       stripPrefix: false
+      sensitiveHeaders:
     cliente:
       path: /cliente/**
       serviceId: cliente
       stripPrefix: false
+      sensitiveHeaders:
     porta:
       path: /porta/**
       serviceId: porta
       stripPrefix: false
+      sensitiveHeaders:
